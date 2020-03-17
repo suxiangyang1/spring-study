@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="configManager" class="com.soft1851.spring.ioc.entity.ConfigManager">
+        <property name="set">
+            <set>
+                <value>set1</value>
+                <value>set2</value>
+                <value>set3</value>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>list1</value>
+                <value>list2</value>
+                <value>list3</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="one" value="map1"></entry>
+                <entry key="two" value="map2"></entry>
+                <entry key="three" value="map3"></entry>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="key1">Properties1</prop>
+                <prop key="key2">Properties2</prop>
+                <prop key="key3">Properties3</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
