@@ -50,8 +50,8 @@ public class PostDaoTest {
     @Test
     public void batchDelete() {
         List<Integer> postIds = new ArrayList<>();
-        postIds.add(3);
-        postIds.add(4);
+        postIds.add(5);
+        postIds.add(6);
         int [] rows = postDao.batchDelete(postIds);
         System.out.println(rows.length);
     }
@@ -92,5 +92,6 @@ public class PostDaoTest {
         Post post = Post.builder().forumId(1).title("123").content("123").thumbnail(soundbyte).createTime(Timestamp.valueOf(LocalDateTime.now())).build();
         int n = postDao.insert(post);
         System.out.println(n);
+
     }
 }
