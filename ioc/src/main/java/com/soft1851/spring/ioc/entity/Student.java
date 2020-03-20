@@ -1,38 +1,19 @@
 package com.soft1851.spring.ioc.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
+    private Integer id;
     private String name;
-    private Phone phone;
-
-    public Student(String name, Phone phone) {
-        this.name = name;
-        this.phone = phone;
-    }
-
-    public Student() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Phone getPhone() {
-        return phone;
-    }
-
-    public void setPhone(Phone phone) {
-        this.phone = phone;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", phone=" + phone +
-                '}';
-    }
+    private List<String> hobbits;
+    private List<Phone> phones;
 }
