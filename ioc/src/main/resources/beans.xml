@@ -3,15 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="phone" class="com.soft1851.spring.ioc.entity.Phone">
+    <bean id="phone" class="com.soft1851.spring.spring.ioc.entity.Phone">
         <constructor-arg  name="brand" value="huawei"/>
         <constructor-arg name="price" value="4599"/>
     </bean>
-    <bean id="phone1" class="com.soft1851.spring.ioc.entity.Phone">
+    <bean id="phone1" class="com.soft1851.spring.spring.ioc.entity.Phone">
         <property name="brand" value="iphonex"/>
         <property name="price" value="10988"/>
     </bean>
-    <bean id="student" class="com.soft1851.spring.ioc.entity.Student">
+    <bean id="student" class="com.soft1851.spring.spring.ioc.entity.Student">
         <property name="name" value="Jim"/>
         <property name="phone" ref="phone"/>
     </bean>

@@ -3,17 +3,17 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="phone" class="com.soft1851.spring.ioc.entity.Phone">
+<bean id="phone" class="com.soft1851.spring.spring.ioc.entity.Phone">
     <property name="brand" value="华为"/>
     <property name="price" value="4558"/>
 </bean>
 
-    <bean id="phone1" class="com.soft1851.spring.ioc.entity.Phone">
+    <bean id="phone1" class="com.soft1851.spring.spring.ioc.entity.Phone">
         <property name="brand" value="小米"/>
         <property name="price" value="3669"/>
     </bean>
 
-<bean id="student" class="com.soft1851.spring.ioc.entity.Student">
+<bean id="student" class="com.soft1851.spring.spring.ioc.entity.Student">
     <property name="name" value="smith"/>
     <property name="hobbits">
         <list>
